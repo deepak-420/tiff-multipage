@@ -26,7 +26,7 @@
                     "msvs_settings": { 'VCLinkerTool': { "AdditionalLibraryDirectories": [".", '<(module_root_dir)/../..', "<(module_root_dir)", '<(module_root_dir)/../../deps/libtiff'] } }
                 }],
                 ['OS!="win"', {
-                    'libraries': ["-ltiff", "<!@(pkg-config --libs libtiff-4)"],
+                    'libraries': ["-ltiff", "<!@(pkg-config --libs libtiff-5)"],
                     'include_dirs': ["<!@(pkg-config libtiff-4 --cflags-only-I | sed s/-I//g)"]
                 }],
             ]
