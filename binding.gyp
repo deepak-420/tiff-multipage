@@ -27,7 +27,7 @@
                 }],
                 ['OS!="win"', {
                     'libraries': ["-ltiff", "<!@(pkg-config --libs libtiff-5)"],
-                    'include_dirs': ["<!@(pkg-config libtiff-4 --cflags-only-I | sed s/-I//g)"]
+                    'include_dirs': ["<!@(pkg-config libtiff-5 --cflags-only-I | sed s/-I//g)"]
                 }],
             ]
         }
